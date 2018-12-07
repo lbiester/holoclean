@@ -35,6 +35,12 @@ To start the Postgres console from your terminal
 $ psql --user <username>    # you can omit --user <username> to use current user
 ```
 
+If this doesn't work and you are running for the first time, try
+```bash
+$ sudo -u postgres -i
+$ psql
+```
+
 We then create a database `holo` and user `holo` (default settings for HoloClean)
 ```
 CREATE DATABASE holo;
